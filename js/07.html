@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="2.js"></script>
+    <style>
+        div{width: 150px;height: 150px;background: red}
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <script>
+        $().getTag('div').mouseover(function(){
+            // this.style.background='blue';
+            // $().getTag('div').css('background','blue');
+            $(this).css('background','blue')
+        }).mouseout(function(){
+            // $().getTag('div').css('background','red');
+            $(this).css('background','red')
+        })
+    
+    </script>
+</body>
+</html>

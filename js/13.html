@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{width: 150px;height: 150px;background: red;}
+    </style>
+    <script src="2.js"></script>
+</head>
+<body>
+    <button>隐藏</button>
+    <button>显示</button>
+    <button>切换</button>
+    <div></div>
+    <script>
+        //隐藏
+        $().getTag('button').eq(0).click(function(){
+            $().getTag('div').hide();
+        });
+        //显示
+        $().getTag('button').eq(1).click(function(){
+            $().getTag('div').show();
+        });
+        $().getTag('button').eq(2).click(function(){
+            $().getTag('div').toggle();
+        })
+    
+    </script>
+</body>
+</html>

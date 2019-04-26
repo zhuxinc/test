@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="2.js"></script>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <img src="../img/1.jpg" alt="">
+    <button>切换</button>
+    <input type="text">
+    <script>
+        $().getTag('div').css({
+           'width':'150px',
+           'height':'150px',
+           'background':'red' ,
+           'margin-bottom':'10px'
+        });
+        $().getTag('button').click(function(){
+            var s=$().getTag('img').attr('src');
+            // console.log(s)
+            // $().getTag('input').attr('value',s);
+            // console.log(a)
+            $().getTag('input').val(s);
+            $().getTag('img').attr('src','../img/2.jpg');
+        })
+    </script>
+</body>
+</html>

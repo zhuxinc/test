@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="2.js"></script>
+</head>
+<body>
+    <img src="../img/1.jpg" alt="">
+    <button id="">点击</button>
+
+    <script>
+        new Base().getTag('button').click(function(){
+            var src=new Base().getTag('img').attr('src');
+            if(src.indexOf('1.jpg')!=-1){
+                new Base().getTag('img').attr('src','../img/2.jpg')
+            }else{
+                new Base().getTag('img').attr('src','../img/1.jpg')
+            }
+            // new Base().getTag('img').attr('src','../img/2.jpg')
+            
+        }).html('切换');
+    </script>
+</body>
+</html>

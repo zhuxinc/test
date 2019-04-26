@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{list-style: none;}
+        ul li{float: left;margin-right: 5px;border: 1px solid gray;padding: 5px;;}
+        ul li img{width: 100px;}
+    </style>
+    <script src="2.js"></script>
+</head>
+<body>
+    <img src="../img/1.jpg" alt="" id="pic">
+    <ul>
+        <li><img src="../img/1.jpg" alt=""></li>
+        <li><img src="../img/2.jpg" alt=""></li>
+        <li><img src="../img/3.jpg" alt=""></li>
+        <li><img src="../img/4.jpg" alt=""></li>
+    </ul>
+    <script>
+        // $().getTag('img').hover(function(){
+        //     $(this).attr('src','../img/2.jpg')
+        // },function(){
+        //     $(this).attr('src','../img/1.jpg')
+        // })
+        $().getTag('li').mouseover(function(){
+            var s=$().getTag('img',this).attr('src');//取出src的值
+
+
+            $().getId('pic').attr('src',s) 
+        });
+    
+    </script>
+</body>
+</html>

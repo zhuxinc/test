@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="2.js"></script>
+</head>
+<body>
+    <img src="../img/1.jpg" alt="">
+    <button>点击</button>
+    <img src="../img/2.jpg" alt="">
+    <img src="../img/3.jpg" alt="">
+    <script>
+        $().getTag('button').click(function(){
+            
+            var s=$().getTag('img').attr('src');
+            $().getTag('img').eq(2).attr('src',s)
+        })
+    </script>
+</body>
+</html>

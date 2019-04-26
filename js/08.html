@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="2.js"></script>
+    <style>
+        /* div{width: 150px;height: 150px;background: red} */
+    </style>
+</head>
+<body>
+    <div></div>
+    <script>
+        // $().getTag('div').hover(function(){
+        //     //over
+        //     $(this).css('background','green');
+        // },function(){
+        //     $(this).css('background','blue');
+        // })
+        // $().getTag('div').css('background','red').css('width','150px').css('height','150px');
+        $().getTag('div').css({
+            'width':'150px',
+            'height':'150px',
+            'background':'red',
+        })
+    </script>
+</body>
+</html>

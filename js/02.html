@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入库 -->
+    <script src="1.js"></script>
+</head>
+<body>
+    <div id="box">hello</div>
+    <div class="one">AAA</div>
+    <div class="one">AAA</div>
+    <p>bbb</p>
+    <p>bbb</p>
+    <p>bbb</p>
+
+    <script>
+        new Base().getId('box').css('color','red').css('font-size','30px');
+        // new Base().getId('box').css('color','red')
+        // console.log(o)
+        new Base().getTag('p').css('color','blue');
+        new Base().getClass('one').css('background','#666')
+    </script>
+</body>
+</html>

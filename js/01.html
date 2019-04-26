@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- 导入js库 -->
+    <script text="text/javascript" src="1.js">
+        
+    </script>
+</head>
+<body>
+   <div id="box"></div> 
+    <div class="one"></div>
+    <div class="one"></div>
+   <script>
+       var o=Base.getId('box');
+       console.log(o);
+    o.innerHTML='你好';
+    var os=Base.getClass('one');
+    os[0].innerHTML='hello';
+    os[1].innerHTML='world';
+   </script>
+</body>
+</html>
